@@ -11,7 +11,11 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.3"
+    "next": "14.0.3",
+    "react-transition-group": "^4.4.5",
+    "primereact": "^8.5.0",
+    "primeicons": "^5.0.0",
+    "primeflex": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^8",
