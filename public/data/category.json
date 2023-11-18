@@ -1,0 +1,14 @@
+[
+    {
+        "Id": 1,
+        "Name": "Bilgisayar"
+    },
+    {
+        "Id": 2,
+        "Name": "Buzdolabı"
+    },
+    {
+        "Id": 3,
+        "Name": "Ütü"
+    }
+]

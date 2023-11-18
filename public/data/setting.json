@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "İşlemci"
+  },
+  {
+    "Id": 2,
+    "Name": "Hafıza (RAM)"
+  },
+  {
+    "Id": 3,
+    "Name": "Enerji Sınıfı"
+  },
+  {
+    "Id": 4,
+    "Name": "Renk"
+  },
+  {
+    "Id": 5,
+    "Name": "Güç (Watt)"
+  },
+  {
+    "Id": 6,
+    "Name": "Şok Buhar"
+  }
+]
