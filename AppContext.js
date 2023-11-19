@@ -12,6 +12,32 @@ export const AppProvider = ({ children }) => {
 
   const [categories, setCategories] = useState(Categories);
 
+  const updateProductCategory = (productId, newCategoryId) => {
+    setProducts((prevProducts) =>
+      prevProducts.map((product) =>
+        product.Id === productId
+          ? { ...product, CategoryId: newCategoryId }
+          : product
+      )
+    );
+  };
+  const updateProductSettings = (productId, newSettings) => {
+    setProducts((prevProducts) =>
+      prevProducts.map((product) =>
+        product.Id === productId
+          ? { ...product, ProductSettings: newSettings }
+          : product
+      )
+    );
+  };
+
+  const updateProduct = (productId, newProduct) => {
+    setProducts((prevProducts) =>
+      prevProducts.map((product) =>
+        product.Id === productId ? newProduct : product
+      )
+    );
+  };
   return (
     <AppContext.Provider
       value={{
@@ -21,6 +47,9 @@ export const AppProvider = ({ children }) => {
         setSettings,
         categories,
         setCategories,
+        updateProductCategory,
+        updateProductSettings,
+        updateProduct,
       }}
     >
       {children}

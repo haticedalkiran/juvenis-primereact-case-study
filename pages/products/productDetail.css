@@ -1,0 +1,43 @@
+.settingDropdown {
+  width: 200px;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.input-group-input {
+  grid-column: 2 / 5;
+}
+.input-group-label {
+  grid-column: 1/ 2;
+  font-weight: 600;
+}
+.input-group-button {
+  grid-column: 5/ 6;
+}
+
+.product-settings-group {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: flex-start;
+}
+
+.product-settings-group-label {
+  display: block;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  grid-column: 1 /2;
+}
+.product-settings-table-container {
+  grid-column: 2 / 5;
+}

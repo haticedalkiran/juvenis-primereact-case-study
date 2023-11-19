@@ -19,10 +19,15 @@ export default function Home() {
   };
 
   if (!products) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <i className="pi pi-spin pi-spinner" style={{ fontSize: "2rem" }}></i>.
+      </div>
+    );
   }
+
   return (
-    <>
+    <div className="container">
       <DataTable
         value={products}
         tableStyle={{ minWidth: "50rem" }}
@@ -38,6 +43,6 @@ export default function Home() {
         <Column field="Name" header="Name"></Column>
         <Column field="Description" header="Description"></Column>
       </DataTable>
-    </>
+    </div>
   );
 }
