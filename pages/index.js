@@ -34,10 +34,11 @@ export default function Home() {
         size="large"
         stripedRows
         onRowClick={onRowSelect}
+        header={"Products"}
       >
         <Column
           field="CategoryId"
-          header="CategoryId"
+          header="Category"
           body={categoryBodyTemplate}
         ></Column>
         <Column field="Name" header="Name"></Column>
